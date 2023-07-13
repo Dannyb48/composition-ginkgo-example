@@ -5,14 +5,14 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/onsi/composition-ginkgo-example/helpers"
-	. "github.com/onsi/ginkgo"
+	"github.com/Dannyb48/composition-ginkgo-example/helpers"
+	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gexec"
 
 	//tests to run
-	"github.com/onsi/composition-ginkgo-example/tests/key_value_tests"
-	"github.com/onsi/composition-ginkgo-example/tests/prefix_tests"
+	"github.com/Dannyb48/composition-ginkgo-example/tests/key_value_tests"
+	"github.com/Dannyb48/composition-ginkgo-example/tests/prefix_tests"
 
 	"testing"
 )
@@ -28,7 +28,7 @@ func TestIntegration(t *testing.T) {
 }
 
 var _ = SynchronizedBeforeSuite(func() []byte {
-	keyValueBinary, err := gexec.Build("github.com/onsi/composition-ginkgo-example/key_value_store")
+	keyValueBinary, err := gexec.Build("github.com/Dannyb48/composition-ginkgo-example/key_value_store")
 	Ω(err).ShouldNot(HaveOccurred())
 
 	cmd := exec.Command(keyValueBinary)

@@ -1,8 +1,8 @@
 package key_value_tests
 
 import (
-	"github.com/onsi/composition-ginkgo-example/helpers"
-	. "github.com/onsi/ginkgo"
+	"github.com/Dannyb48/composition-ginkgo-example/helpers"
+	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 )
 

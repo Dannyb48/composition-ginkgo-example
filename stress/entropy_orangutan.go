@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/onsi/composition-ginkgo-example/helpers"
-	. "github.com/onsi/ginkgo"
+	"github.com/Dannyb48/composition-ginkgo-example/helpers"
+	. "github.com/onsi/ginkgo/v2"
 )
 
 type EntropyOrangutan struct {
